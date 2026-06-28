@@ -29,6 +29,8 @@ python3 examples/run_demo.py
 
 See `examples/demo-output.txt` for a captured example run.
 
+See `docs/triage-examples.md` for concrete examples of how mixed operational and clinical messages should be routed.
+
 ## Project Structure
 
 ```text
