@@ -1,0 +1,9 @@
+CARE COORDINATION ROUTES
+- MSG-004 -> clinician-review [high]
+  Guardrail: No outbound guidance until a licensed clinician reviews the message.
+- MSG-001 -> scheduling [medium]
+  Guardrail: Operational outreach only; no clinical advice.
+- MSG-002 -> clinician-review [medium]
+  Guardrail: No outbound guidance until a licensed clinician reviews the message.
+- MSG-003 -> admin [routine]
+  Guardrail: Administrative response allowed if no clinical content is added.
