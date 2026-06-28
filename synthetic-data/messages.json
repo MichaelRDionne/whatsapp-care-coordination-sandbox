@@ -1,0 +1,26 @@
+[
+  {
+    "id": "MSG-001",
+    "sender_role": "front desk",
+    "body": "Synthetic client missed morning visit and asked for a call back to reschedule.",
+    "received_window": "same day"
+  },
+  {
+    "id": "MSG-002",
+    "sender_role": "care coordinator",
+    "body": "Synthetic lab report is available and needs clinician review before outreach.",
+    "received_window": "same day"
+  },
+  {
+    "id": "MSG-003",
+    "sender_role": "billing",
+    "body": "Synthetic insurance question, no clinical content.",
+    "received_window": "next business day"
+  },
+  {
+    "id": "MSG-004",
+    "sender_role": "front desk",
+    "body": "Synthetic message mentions worsening symptoms and asks whether medication should change.",
+    "received_window": "same day"
+  }
+]
