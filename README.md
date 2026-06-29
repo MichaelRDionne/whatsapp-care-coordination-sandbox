@@ -1,5 +1,7 @@
 # WhatsApp Care Coordination Sandbox
 
+[![Tests](https://github.com/MichaelRDionne/whatsapp-care-coordination-sandbox/actions/workflows/tests.yml/badge.svg)](https://github.com/MichaelRDionne/whatsapp-care-coordination-sandbox/actions/workflows/tests.yml)
+
 Synthetic care-team message routing demo for healthcare operations.
 
 This project demonstrates how a lightweight AI-assisted routing layer can turn unstructured team messages into human-reviewed queues: missed visit outreach, refill routing, lab follow-up, scheduling barriers, and escalation review.
