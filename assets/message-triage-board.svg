@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic care-team message triage board</title>
+  <desc id="desc">A synthetic message triage board that routes raw care-team messages into clinician review, scheduling, admin, and needs-triage queues.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f5f7f8; }
+      .ink { fill: #172026; font-family: Avenir, Helvetica, Arial, sans-serif; }
+      .white { fill: #ffffff; font-family: Avenir, Helvetica, Arial, sans-serif; }
+      .muted { fill: #68767c; font-family: Avenir, Helvetica, Arial, sans-serif; }
+      .panel { fill: #ffffff; stroke: #d9e1e5; stroke-width: 1.5; }
+      .head { fill: #133b4a; }
+      .blue { fill: #1f5f82; }
+      .teal { fill: #11615b; }
+      .gold { fill: #a46f1c; }
+      .red { fill: #a23b34; }
+      .line { stroke: #d9e1e5; stroke-width: 1.5; }
+      .title { font-size: 40px; font-weight: 800; }
+      .body { font-size: 21px; }
+      .label { font-size: 18px; font-weight: 800; }
+      .tiny { font-size: 16px; font-weight: 800; letter-spacing: 1px; }
+      .mono { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 17px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="720"/>
+  <rect x="42" y="36" width="1116" height="86" rx="6" class="head"/>
+  <text x="72" y="82" class="white title">Care Coordination Routing Sandbox</text>
+  <text x="74" y="108" fill="#cfe1e8" font-family="Avenir, Helvetica, Arial, sans-serif" font-size="19">Synthetic messages routed into human-reviewed operational queues</text>
+
+  <rect x="42" y="150" width="356" height="474" rx="8" class="panel"/>
+  <text x="70" y="190" class="muted tiny">RAW SYNTHETIC INBOX</text>
+
+  <rect x="70" y="216" width="300" height="86" rx="6" fill="#f8fbfc"/>
+  <text x="92" y="246" class="ink mono">MSG-204</text>
+  <text x="92" y="276" class="muted body">Symptoms worsening and</text>
+  <text x="92" y="302" class="muted body">medication question...</text>
+
+  <rect x="70" y="324" width="300" height="86" rx="6" fill="#f8fbfc"/>
+  <text x="92" y="354" class="ink mono">MSG-207</text>
+  <text x="92" y="384" class="muted body">Missed appointment, needs</text>
+  <text x="92" y="410" class="muted body">reschedule call...</text>
+
+  <rect x="70" y="432" width="300" height="86" rx="6" fill="#f8fbfc"/>
+  <text x="92" y="462" class="ink mono">MSG-211</text>
+  <text x="92" y="492" class="muted body">Can someone call back</text>
+  <text x="92" y="518" class="muted body">today?</text>
+
+  <rect x="70" y="540" width="300" height="48" rx="6" fill="#eef6f5"/>
+  <text x="92" y="571" class="teal label">No phone numbers. No real names.</text>
+
+  <rect x="430" y="150" width="728" height="474" rx="8" class="panel"/>
+  <text x="458" y="190" class="muted tiny">ROUTED QUEUES</text>
+
+  <rect x="458" y="222" width="314" height="144" rx="8" fill="#fbf0ee" stroke="#e8c8c5" stroke-width="1.5"/>
+  <text x="482" y="258" class="red label">Clinician Review</text>
+  <text x="482" y="292" class="ink mono">MSG-204</text>
+  <text x="482" y="326" class="muted body">Clinical terms detected.</text>
+  <text x="482" y="352" class="muted body">No outbound guidance.</text>
+
+  <rect x="812" y="222" width="314" height="144" rx="8" fill="#eef7fb" stroke="#c9dce7" stroke-width="1.5"/>
+  <text x="836" y="258" class="blue label">Scheduling</text>
+  <text x="836" y="292" class="ink mono">MSG-207</text>
+  <text x="836" y="326" class="muted body">Operational outreach only.</text>
+  <text x="836" y="352" class="muted body">No clinical advice.</text>
+
+  <rect x="458" y="414" width="314" height="144" rx="8" fill="#fff7e9" stroke="#ead7b8" stroke-width="1.5"/>
+  <text x="482" y="450" class="gold label">Needs Triage</text>
+  <text x="482" y="484" class="ink mono">MSG-211</text>
+  <text x="482" y="518" class="muted body">Ambiguous intent.</text>
+  <text x="482" y="544" class="muted body">Human decides queue.</text>
+
+  <rect x="812" y="414" width="314" height="144" rx="8" fill="#edf8f4" stroke="#c9e0d8" stroke-width="1.5"/>
+  <text x="836" y="450" class="teal label">Admin</text>
+  <text x="836" y="484" class="ink mono">MSG-218</text>
+  <text x="836" y="518" class="muted body">Forms or insurance only.</text>
+  <text x="836" y="544" class="muted body">Non-clinical response.</text>
+
+  <rect x="42" y="652" width="1116" height="38" rx="6" fill="#ffffff" stroke="#d9e1e5" stroke-width="1.5"/>
+  <text x="72" y="677" class="muted body">Synthetic demo only. Routing separates operations from clinical judgment.</text>
+</svg>

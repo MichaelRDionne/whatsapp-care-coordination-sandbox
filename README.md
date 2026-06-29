@@ -4,6 +4,10 @@ Synthetic care-team message routing demo for healthcare operations.
 
 This project demonstrates how a lightweight AI-assisted routing layer can turn unstructured team messages into human-reviewed queues: missed visit outreach, refill routing, lab follow-up, scheduling barriers, and escalation review.
 
+![Synthetic care-team triage board](assets/message-triage-board.svg)
+
+The visual demo shows how synthetic messages move from a raw inbox into clinician-review, scheduling, admin, and needs-triage queues.
+
 ## What It Shows
 
 - Synthetic message fixtures with no phone numbers or real identities.
