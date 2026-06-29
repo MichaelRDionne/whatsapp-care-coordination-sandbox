@@ -35,6 +35,12 @@ See `examples/demo-output.txt` for a captured example run.
 
 See `docs/triage-examples.md` for concrete examples of how mixed operational and clinical messages should be routed.
 
+## Run Tests
+
+```bash
+python3 -m unittest discover -s tests
+```
+
 ## Project Structure
 
 ```text
@@ -42,6 +48,7 @@ synthetic-data/messages.json  synthetic message examples
 src/message_router.py         routing logic
 docs/routing-policy.md        human-review policy
 examples/run_demo.py          runnable demo
+tests/test_message_router.py  routing and guardrail tests
 ```
 
 ## Next Build Ideas
@@ -49,4 +56,4 @@ examples/run_demo.py          runnable demo
 - Add a synthetic CSV/JSONL inbox import.
 - Add confidence scores and an `ambiguous` queue.
 - Add a dashboard view for queue ownership.
-- Add tests that verify clinical terms always route to clinician review.
+- Add dashboard-level filters for queue owner and priority.

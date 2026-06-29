@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -8,6 +9,10 @@ from typing import Any
 CLINICIAN_TERMS = ("symptom", "medication", "lab", "worsening", "safety")
 SCHEDULING_TERMS = ("missed", "reschedule", "appointment", "call back")
 ADMIN_TERMS = ("billing", "insurance", "form")
+
+
+def has_term(body: str, terms: tuple[str, ...]) -> bool:
+    return any(re.search(rf"\b{re.escape(term)}\b", body) for term in terms)
 
 
 def load_messages(path: str | Path) -> list[dict[str, Any]]:
@@ -21,15 +26,15 @@ def load_messages(path: str | Path) -> list[dict[str, Any]]:
 def route_message(message: dict[str, str]) -> dict[str, str]:
     body = message["body"].lower()
 
-    if any(term in body for term in CLINICIAN_TERMS):
+    if has_term(body, CLINICIAN_TERMS):
         queue = "clinician-review"
-        priority = "high" if "worsening" in body or "safety" in body else "medium"
+        priority = "high" if has_term(body, ("worsening", "safety")) else "medium"
         guardrail = "No outbound guidance until a licensed clinician reviews the message."
-    elif any(term in body for term in SCHEDULING_TERMS):
+    elif has_term(body, SCHEDULING_TERMS):
         queue = "scheduling"
         priority = "medium"
         guardrail = "Operational outreach only; no clinical advice."
-    elif any(term in body for term in ADMIN_TERMS):
+    elif has_term(body, ADMIN_TERMS):
         queue = "admin"
         priority = "routine"
         guardrail = "Administrative response allowed if no clinical content is added."
