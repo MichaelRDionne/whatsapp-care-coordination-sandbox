@@ -10,6 +10,12 @@ This project demonstrates how a lightweight AI-assisted routing layer can turn u
 
 The visual demo shows how synthetic messages move from a raw inbox into clinician-review, scheduling, admin, and needs-triage queues.
 
+## Demo Preview
+
+- Visual: `assets/message-triage-board.svg`
+- Captured run: `examples/demo-output.txt`
+- Routing examples: `docs/triage-examples.md`
+
 ## What It Shows
 
 - Synthetic message fixtures with no phone numbers or real identities.
